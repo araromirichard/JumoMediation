@@ -2,7 +2,7 @@
   <nav>
     <v-toolbar dark flat color="#444b74">
 
-      <v-toolbar-items >
+      <v-toolbar-items class="hidden-sm-and-down" >
         <v-btn
           text
           rounded

@@ -1,5 +1,5 @@
 <template>
-  <v-footer app dark padless absolute>
+  <v-footer app dark padless absolute height="auto">
     <v-card class="flex" flat tile color="#444b74">
       <v-card-action class="d-flex justify-md-center">
         <v-btn
@@ -13,7 +13,9 @@
           {{ link }}
         </v-btn>
       </v-card-action>
+      
       <v-divider></v-divider>
+
       <v-card-title>
         <span class="caption px-8"
           >Get connected with us on social networks!</span
