@@ -5,7 +5,6 @@
         <v-btn
           color="white"
           plain
-          flat
           dark
           text
           x-small

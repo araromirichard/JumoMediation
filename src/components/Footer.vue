@@ -1,18 +1,18 @@
 <template>
   <v-footer app dark padless absolute height="auto">
-    <v-card class="flex" flat tile color="#444b74">
-      <v-card-action class="d-flex justify-md-center">
+    <v-card class="flex" fl tile color="#444b74">
+      <v-card-actions class="d-flex justify-md-center">
         <v-btn
-          v-for="link in links"
-          :key="link"
+          v-for="fLink in fLinks"
+          :key="fLink"
           color="white"
           text
           rounded
           class="my-2"
         >
-          {{ link }}
+          {{ fLink }}
         </v-btn>
-      </v-card-action>
+      </v-card-actions>
       
       <v-divider></v-divider>
 
@@ -43,7 +43,7 @@
 export default {
   data: () => ({
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-    links: [
+    fLinks: [
       "Home",
       "About",
       "Services",

@@ -1,20 +1,14 @@
 <template>
   <v-app color="grey lighten-4">
     <v-app-bar app flat dark color="#444b74">
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
-        @click.stop="sideNav = !sideNav"
-      ></v-app-bar-nav-icon>
-      <v-navigation-drawer app v-model="sideNav" class="grey">
-        <p>Test</p>
-      </v-navigation-drawer>
       <Logo class="hidden-sm-and-down" />
+      <SideNav/>
       <v-spacer></v-spacer>
       <Navbar />
       <v-spacer></v-spacer>
       <Local-lang />
     </v-app-bar>
-    <v-main>
+    <v-main pa-0>
       <v-container>
         <Router-view></Router-view>
       </v-container>
@@ -27,6 +21,7 @@
 // import components
 
 import Navbar from "./components/Navbar";
+import SideNav from "./components/SideNav";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo.vue";
 import LocalLang from "./components/LocalLang.vue";
@@ -38,9 +33,17 @@ export default {
     Footer,
     Logo,
     LocalLang,
+    SideNav
   },
-  data: () => ({
-    sideNav: false,
-  }),
-};
+  data () {
+    return {
+   
+  }
+  },
+
+
+  mounted() {
+    console.log ({vuetify:this.$vuetify});
+  }
+}
 </script>

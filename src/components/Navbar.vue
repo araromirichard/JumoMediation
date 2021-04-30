@@ -1,8 +1,7 @@
 <template>
   <nav>
     <v-toolbar dark flat color="#444b74">
-
-      <v-toolbar-items class="hidden-sm-and-down" >
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           text
           rounded
@@ -68,7 +67,7 @@
         >
           Contact
         </v-btn>
-        <v-menu open-on-hover bottom offset-y>
+        <v-menu app open-on-hover bottom offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn
               text
